@@ -4,10 +4,8 @@ import Layout from '../components/Layout';
 import { graphql } from 'gatsby';
 
 const tours = ({ data }) => {
-//   console.log(data);
   return (
     <Layout>
-      <h3>Tours Page</h3>
       <Tours tours={data.tours.edges} />
     </Layout>
   );

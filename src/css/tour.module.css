@@ -1,20 +1,27 @@
 .tour {
   box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
   transition: all 0.3s linear;
+  /* width: 30%; */
+  text-align: center;
+  margin-bottom: 1rem;
 }
+
 .tour:hover {
   box-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
-.img-container {
+.imgContainer {
   position: relative;
   background: #3fd0d4;
   transition: all 0.3s linear;
+  /* width: 100%; */
 }
+
 .img {
   transition: all 0.3s linear;
 }
-.img-container:hover .img {
+
+.imgContainer:hover .img {
   opacity: 0.3;
 }
 
@@ -34,22 +41,28 @@
   cursor: pointer;
   text-decoration: none;
 }
+
 .link:hover {
   background: #fff;
   color: #3fd0d4;
 }
-.img-container:hover .link {
+
+.imgContainer:hover .link {
   opacity: 1;
 }
 
 .footer {
   padding: 1rem;
   text-align: left;
+  background-color: rgb(99, 94, 94);
+  color: #ccd3d3;
 }
+
 .footer h3 {
   text-transform: capitalize;
   margin-bottom: 0;
 }
+
 .info {
   display: flex;
   flex-wrap: wrap;
@@ -58,19 +71,23 @@
   align-items: center;
   margin-top: 0.5rem;
 }
+
 .info h6,
 .info h4 {
   margin-bottom: 0;
 }
+
 .country {
   text-transform: capitalize;
   color: #3fd0d4;
   display: flex;
   align-items: center;
 }
+
 .icon {
   margin-right: 0.4rem;
 }
+
 .details {
   color: #cfcfcf;
   text-transform: uppercase;

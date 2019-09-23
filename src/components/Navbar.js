@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import '../scss/Navbar.scss';
 
 const Navbar = () => {
   return (
-    <div>
-      <ul>
+    <div className="navbar">
+      <ul className="list-items">
         <li>
           <Link to="/">Home</Link>
         </li>
