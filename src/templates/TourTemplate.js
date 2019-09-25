@@ -1,20 +1,20 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
+import { graphql} from 'gatsby';
 import classes from '../css/template.module.css';
 import Layout from '../components/Layout';
 import Image from 'gatsby-image';
-import { FaMoneyBillWave, FaMap } from 'react-icons';
+// import { FaMoneyBillWave, FaMap } from 'react-icons';
 
 const TourTemplate = ({ data }) => {
   const {
     name,
     price,
-    country,
-    days,
-    description: { description },
+    // country,
+    // days,
+    // description: { description },
     images,
-    start,
-    journey,
+    // start,
+    // journey,
   } = data.tour;
   console.log(price);
 
