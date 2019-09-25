@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql} from 'gatsby';
+import { graphql } from 'gatsby';
 import classes from '../css/template.module.css';
 import Layout from '../components/Layout';
 import Image from 'gatsby-image';
@@ -16,7 +16,7 @@ const TourTemplate = ({ data }) => {
     // start,
     // journey,
   } = data.tour;
-  console.log(price);
+  // console.log(price);
 
   return (
     <Layout>

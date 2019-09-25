@@ -21,10 +21,13 @@ exports.createPages = async ({ actions, graphql }) => {
         slug: node.slug,
       },
     });
-  });
 
-  createPage({
-    path: '/tours/my-tour',
-    component: path.resolve('./src/templates/my-tour.js'),
+    createPage({
+      path: `/tourSaga/${node.slug}`,
+      component: path.resolve('./src/templates/tourSagaTemplate.js'),
+      context: {
+        slug: node.slug,
+      },
+    });
   });
 };

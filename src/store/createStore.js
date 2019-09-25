@@ -1,12 +1,10 @@
 import React from 'react';
-
 import { applyMiddleware, createStore, compose } from 'redux';
 import { Provider } from 'react-redux';
-
 import createSagaMiddleware from 'redux-saga';
 
-import reducers from './reducer';
 import { tourSagas } from './sagas/index';
+import reducers from './reducer';
 
 // const composeEnhancers =
 //   process.env.NODE_ENV === 'development'

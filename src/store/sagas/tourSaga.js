@@ -5,8 +5,8 @@ const contentful = require('contentful');
 export function* tours(action) {
   try {
     const client = yield contentful.createClient({
-      space: 'y9k6wuw3q4rr',
-      accessToken: 'uGE9_VltepB1qJrI6jPetEsqh74HYbbP1acEROu34P8',
+      space: 'aa6lmvvj10ja',
+      accessToken: 'coEg-s-TeNE4MIZnenmUau8zdPNpZZQc5LqeJ9dW6qU',
     });
     const res = yield client.getEntries({ content_type: 'tour' });
 
@@ -15,6 +15,6 @@ export function* tours(action) {
       payload: res.items,
     });
   } catch (error) {
-    console.log(error);
+    yield console.log(error);
   }
 }

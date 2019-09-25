@@ -3,6 +3,7 @@ import * as actionType from './actions/actionType';
 const initialState = {
   count: 0,
   tours: [],
+  image: null,
 };
 
 const reducer = (state = initialState, action) => {
@@ -16,6 +17,12 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         tours: action.payload,
+      };
+
+    case actionType.SHOW_IMAGE:
+      return {
+        ...state,
+        image: state.tours.filter(tour => action.payload === tour.fields.slug),
       };
 
     default:

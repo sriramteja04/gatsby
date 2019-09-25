@@ -7,6 +7,7 @@ import { tourAction } from '../store/actions/actions';
 
 class TourSaga extends React.Component {
   componentDidMount() {
+    // console.log(this.props);
     this.props.tourAction();
   }
   render() {

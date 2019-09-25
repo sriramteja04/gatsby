@@ -5,3 +5,10 @@ export const tourAction = () => {
     type: actionTypes.SHOW_TOUR,
   };
 };
+
+export const showImage = slug => {
+  return {
+    type: actionTypes.SHOW_IMAGE,
+    payload: slug,
+  };
+};
